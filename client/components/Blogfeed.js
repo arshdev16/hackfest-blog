@@ -5,13 +5,15 @@ const Blogfeed = ({ blogs }) => {
   return blogs.length > 0 ? (
     blogs.map((blog) => <BlogItem key={blog.id} blog={blog} />)
   ) : (
-    <div><p className="font-bold ">No blogs yet</p></div>
+    <div>
+      <p className="font-bold ">No blogs yet</p>
+    </div>
   );
 };
 
 const BlogItem = ({ blog }) => {
   return (
-    <div className=" flex flex-col items-start w-1/4 m-5 p-3 border-4 border-black rounded-xl shadow-1xl hover:shadow-2xl transition-all">
+    <div className=" flex flex-col items-start w-1/4 m-5 p-3 border-4 border-black rounded-xl shadow-1xl hover:shadow-2xl transition-all duration-300 ease-linear">
       <div className="flex">
         <img className="rounded-full w-12 h-12 mx-2" src={blog.profilePic} />
         <div className="flex flex-col">
