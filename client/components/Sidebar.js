@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 const SidebarIcon = ({ icon }) => (
   <div
-    className="relative flex items-center justify-center h-12 w-12 mt-4 mb-2 mx-auto shadow-lg bg-blue-700
+    className="text-white relative flex items-center justify-center h-12 w-12 mt-4 mb-2 mx-auto shadow-lg bg-blue-700
   rounded-full hover:bg-blue-800 hover:rounded-xl transition-all duration-300 ease-linear"
   >
     {icon}
